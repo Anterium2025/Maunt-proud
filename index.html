@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MauntShops - Магазин игр и донатов</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Styles - Create a separate style.css for these */
+        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #222; color: #eee; }
+        header { background-color: #333; color: white; padding: 1em; text-align: center; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; background-color: #444; }
+        nav li { padding: 1em; }
+        nav a { color: white; text-decoration: none; transition: color 0.3s; }
+        nav a:hover { color: #ffc107; }
+        .container { width: 80%; margin: 20px auto; }
+        .game { border: 1px solid #555; padding: 1em; margin-bottom: 1em; background-color: #333; border-radius: 8px; }
+        .game img { max-width: 100%; height: auto; border-radius: 8px; }
+        .game h2 { margin-top: 0; color: #ffc107; }
+        .game p { line-height: 1.6; }
+        .game button { background-color: #ffc107; color: #222; border: none; padding: 0.5em 1em; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; }
+        .game button:hover { background-color: #e0a800; }
+        footer { background-color: #333; color: white; text-align: center; padding: 1em; }
+        .donate-section { background-color: #444; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .donate-section h2 { color: #ffc107; }
+        .donate-form label { display: block; margin-bottom: 5px; }
+        .donate-form input[type="number"] { width: 100%; padding: 8px; border-radius: 4px; border: none; margin-bottom: 10px; background-color: #555; color: #eee; }
+        .donate-form button { background-color: #ffc107; color: #222; border: none; padding: 0.5em 1em; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; }
+        .donate-form button:hover { background-color: #e0a800; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MauntShops</h1>
+        <p>Ваш магазин цифровых игр и донатов!</p>    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Распродажа</a></li>
+            <li><a href="#">Донат</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="donate-section">
+            <h2>Поддержка любимых игр! (Имитация)</h2>
+            <p>Выберите игру и сумму для "доната" (только для демонстрации):</p>
+            <form class="donate-form">
+                <label for="game">Игра:</label>
+                <select id="game" name="game">
+                    <option value="pubg">PUBG Mobile</option>
+                    <option value="fortnite">Fortnite</option>
+                    <option value="genshin">Genshin Impact</option>
+                </select>
+
+                <label for="amount">Сумма (руб.):</label>
+                <input type="number" id="amount" name="amount" placeholder="Введите сумму" min="100">
+
+                <button type="submit">ПОДДЕРЖАТЬ (Имитация)</button>
+            </form>
+            <p><strong>ВНИМАНИЕ:</strong> Этот раздел демонстрирует функциональность "доната" только в целях шаблона.  Реальные транзакции не обрабатываются.</p>
+        </section>
+
+        <div class="game">
+            <img src="placeholder-game1.jpg" alt="Название игры 1">
+            <h2>Название игры 1</h2>
+            <p>Описание игры.  Краткий синопсис и особенности.</p>
+            <p>Цена: 1299 руб.</p>
+            <button>В корзину</button>
+        </div>
+
+        <div class="game">
+            <img src="placeholder-game2.jpg" alt="Название игры 2">
+            <h2>Название игры 2</h2>
+            <p>Описание игры.  Краткий синопсис и особенности.</p>
+            <p>Цена: 1799 руб.</p>
+            <button>В корзину</button>
+        </div>
+
+        <!-- More game entries... -->
+    </div>
+
+    <footer>
+        &copy; 2024 MauntShops. Все права защищены.
+    </footer>
+</body>
+</html>
